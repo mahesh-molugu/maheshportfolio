@@ -1,94 +1,79 @@
 body
 {
-    margin-top: 0%;
-    width:100%;
     background-color: rgb(206, 196, 196);
     color: black;
     font-family: 'Times New Roman', Times, serif;
 }
-.section-home h1{
-    padding-left: 50px;
-    width: fit-content;
-    justify-self: center;
-
-}
-.section-home p{
-    
-    font-size: 20px;
-    width: fit-content;
-}
-
 body.dark-mode
 {
     background-color: rgb(53, 53, 53);
     color: white;
-    
 }
-.know-btn
-{
-    background-color:rgb(78, 76, 76);
-    margin-top: 20px;
-    border-radius: 100px;
-    padding: 10px 60px;
-    font-size: 22px;
-    color: white;
-    width: fit-content;
-    
-}
-.projects-btn
-{
-   
-    background-color:rgb(78, 76, 76);
 
-    margin-top: 20px;
-    border-radius: 100px;
-    padding: 10px 60px;
-    font-size: 22px;
-    color: white;
-    width: fit-content;
-}
-.highlight
+.home-page
 {
-    color: rgb(52, 89, 230);
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    justify-self: center;
+   
+    justify-content: space-between;
+    gap: 30px;
+    text-align: center;
 }
-body.dark-mode .highlight
+.home-page .head
+{
+    font-size: 25px;
+}
+.home-page .head span
+{
+   color: rgb(31, 23, 108);
+}
+.home-page .para
+{
+    font-size: 30px;
+} 
+
+.home-page .buttons
+{
+    align-self: center;
+   display: flex;
+   justify-content: space-between;
+   gap: 30px;
+
+}
+.buttons button a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+.buttons button
+{
+    background-color: rgb(61, 60, 60);
+    width: fit-content;
+    height: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 100px;
+
+}
+
+body.dark-mode .head span
 {
     color: rgb(246, 88, 151);
 }
-.know-btn a{
-    color: white;
-    text-decoration: none;
+body.dark-mode .buttons button
+{
+    border-color: white;
 }
 
-.projects-btn a{
-    color: white;
-    text-decoration: none;
-}
 
-.section-home {
-    padding-top: 120px;
-    min-height: calc(100vh - 85px);
-   
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    margin-left: 100px;
-}
 
-.section-home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
 
-.section-home .button-wrapper {
-    display: flex;
-    gap: 20px;
-    margin-top: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+
 
 /* Responsive Styles */
 @media (max-width: 1024px) {

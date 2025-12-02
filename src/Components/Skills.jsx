@@ -5,9 +5,9 @@ import './Skills.css'
 const Skills = () => {
   return (
     <motion.div className="Skills"
-     initial={{ opacity:0, y:30}}
-     animate ={{ opacity:1, y:0 }}
-     tranisition={{duration:1}}>
+      initial={{ opacity: 0, y: 0 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 2 }}>
        <div className="heading"> 
           <h2>"Nice to meet you. I am <span className="name">Mahesh Molugu."</span></h2>
         </div>

@@ -64,12 +64,15 @@
 {
  margin-right: 25px;
  border-radius: 100px;  
- width:150px;
- 
+ width:fit-content ;
+ padding: 5px 20px;
+ border-color: whitesmoke;
 }
 .light-btn
 {
-    background-color: rgb(112, 109, 109);
+    background-color: rgb(55, 52, 52);
+    color: white;
+    border-color: black;
     
    
 
@@ -79,8 +82,6 @@
     background-color: rgb(206, 205, 205);
     color: black;
     font-weight:500;
-     padding-left: 25px;
-     padding-right: 25px;
 }
 
 .navbar.dark a:hover

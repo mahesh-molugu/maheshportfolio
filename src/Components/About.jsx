@@ -4,13 +4,16 @@ import './About.css'
 const About = () => {
   return (
     <motion.div className='About'
-     initial={{ opacity:0, y:30}}
-     animate ={{ opacity:1, y:0 }}
-     tranisition={{duration:1}}>
-       <div className="education">
+        initial={{ opacity: 0, y: 0 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 2 }}
+      >
+      
         
 
-        <h2>Education </h2>
+      <div className="about-container">
+         <div className="education">
+          <h2>Education </h2>
         <p>⚫ Graduation in Computer Science And Engineering from Kommuri Pratap Reddy Institute of Technology </p>
         <p className="years" >2022-2025</p>
         <p>📍Hyderabad</p>
@@ -22,7 +25,8 @@ const About = () => {
          <p>📍Yadagirigutta</p>
        </div>
        
-         <div className="summary">
+         <div className="summarise">
+          <div className="summary">
             <h2 >Summary</h2>
         <p>I’m a quick learner with a strong ability to adapt to new technologies and environments. I approach every task with dedication and hard work, always striving to deliver efficient and high-quality results.</p>
        </div >
@@ -44,6 +48,9 @@ const About = () => {
         <h2>Hobbies</h2>
         <p>I enjoy coding personal projects that challenge my creativity, sketching with pencil art to relax and express ideas visually, and listening to music which keeps me inspired and focused.</p>
        </div>
+         </div>
+
+      </div>
        
        <div className="declaration">
         <h2>"I Declare That Above Details are real and acheivements of myself " </h2>
