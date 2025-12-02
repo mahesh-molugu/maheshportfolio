@@ -1,0 +1,264 @@
+.heading
+{
+    box-shadow: 0 0 8px rgba(0,0,0, 1);
+    margin-top:10px;
+    margin-left: 500px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color:rgb(222, 215, 215);
+    width: fit-content;
+}
+.tech-skills
+{
+  box-shadow: 0 0 8px rgba(0,0,0, 0.8) ;
+  width: 96.5%;
+  height: 150px;
+  margin-left: 25px;
+  justify-content: center;
+  justify-items: center;
+  margin-top:30px;
+  
+  padding-right: 50px;
+  background-color: rgb(222, 215, 215);
+  padding-top: 10px;
+  padding-left:50px
+
+}
+.tech-skills ul 
+{
+    margin-top: 25px;
+    list-style-type: none;
+    display:flex;
+    justify-content: space-between;
+    justify-items: center;
+    
+    gap: 30px;
+    
+}
+.tech-skills ul li button{
+    border-radius: 100px;
+    background-color:rgb(236, 234, 234);
+    color: black;
+    font-weight: 550;
+    box-shadow:0 0 8px rgba(0,0,0, 1.8) ;
+    
+}
+.soft-skills
+{
+    box-shadow:0 0 8px rgba(0,0,0, 0.8) ;
+
+    justify-items: center;
+    width: 96.5%;
+    padding-left:50px;
+    padding-right:50px;
+    padding-top: 10px;
+    margin-left: 25px;
+    margin-top: 20px;
+    background-color: rgb(222, 215, 215);;
+    height: 150px;
+}
+.soft-skills ul{
+    list-style-type: none;
+    display: flex;
+    gap:20px;
+    padding-bottom: 20px;
+
+
+}
+.soft-skills ul li button{
+margin-top: 30px;
+    border-radius:100px;
+    background-color: rgb(236, 234, 234);
+    color: black;
+    font-weight: 550;
+    width: fit-content;
+     box-shadow:0 0 8px rgba(0,0,0, 1.8) ;
+    
+}
+
+.contact-btn button
+{
+    margin-top: 80px;
+    width: 300px;
+    border-radius: 100px;
+    font-size:20px ;
+   
+    background-color:rgb(78, 76, 76) ;
+    
+}
+
+
+.name
+{
+ color: green;
+}
+
+body.dark-mode .heading
+{
+    background-color: rgb(44, 42, 42) ;
+    box-shadow: rgba(177, 171, 171, 0.8) 0 0 8px;
+}
+body.dark-mode .heading .name
+{
+    color: rgb(246, 88, 151);
+}
+body.dark-mode .tech-skills
+{
+    background-color:rgb(44, 42, 42) ; 
+        box-shadow: rgba(177, 171, 171, 0.8) 0 0 8px;
+
+}
+body.dark-mode .tech-skills h2
+{
+    color: rgb(246, 88, 151);
+}
+body.dark-mode .soft-skills
+{
+    background-color:rgb(44, 42, 42) ;
+        box-shadow: rgba(177, 171, 171, 0.8) 0 0 8px;
+    
+}
+body.dark-mode .soft-skills h2
+{
+    color:rgb(246, 88, 151) ;
+}
+body.dark-mode .contact-btn button{
+    background-color: rgb(44, 42, 42) ;;
+    box-shadow: rgba(177, 171, 171, 0.8) 0 0 8px;
+}
+body.dark-mode .tech-skills ul li button
+    {
+        background-color: rgb(185, 178, 178);
+        box-shadow: rgba(177, 171, 171, 0.6) 0 0 8px;
+    }
+
+body.dark-mode .soft-skills ul li button
+{
+    background-color: rgb(185, 178, 178);
+    box-shadow: rgba(177, 171, 171, 0.6) 0 0 8px;
+}
+
+.Skills {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .heading {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+    
+    .tech-skills,
+    .soft-skills {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .contact-btn button {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .heading {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        padding: 15px;
+        font-size: 16px;
+    }
+    
+    .tech-skills {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        padding: 20px;
+        padding-bottom: 30px;
+    }
+    
+    .tech-skills ul {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+    
+    .tech-skills ul li button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+    
+    .soft-skills {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        padding: 20px;
+        padding-bottom: 30px;
+    }
+    
+    .soft-skills ul {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+    
+    .soft-skills ul li button {
+        font-size: 14px;
+        padding: 8px 15px;
+        margin-top: 10;
+    }
+    
+    .contact-btn button {
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading {
+        font-size: 14px;
+        padding: 10px;
+        margin-top: 10px;
+    }
+    
+    .tech-skills,
+    .soft-skills {
+        width: 100%;
+        padding: 15px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .tech-skills h2,
+    .soft-skills h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .tech-skills ul,
+    .soft-skills ul {
+        gap: 10px;
+    }
+    
+    .tech-skills ul li button,
+    .soft-skills ul li button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+    
+    .contact-btn button {
+        width: 90%;
+        font-size: 16px;
+        padding: 10px;
+    }
+}

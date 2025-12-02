@@ -1,0 +1,138 @@
+.projects-header
+{
+   justify-items: center;
+}
+body.dark-mode .projects-header
+{
+    color: rgb(246, 88, 151) ;
+}
+.ecommerce-project
+{
+    box-shadow:  0 0 8px rgba(0,0,0, 0.8);
+    background-color: rgb(233, 227, 227) ;
+    width: 50%;
+    height: 400px;
+    align-content: center;
+    margin-left: 400px;
+}
+body.dark-mode .ecommerce-project
+{
+    background-color: rgb(44, 42, 42);
+    box-shadow:0 0 8px rgba(177, 171, 171, 0.8); ;
+}
+
+.ecommerce-project h3
+{
+    text-align: center;
+}
+body.dark-mode .ecommerce-project h3
+{
+    color: rgb(246, 88, 151) ;
+}
+
+.ecommerce-project p
+{
+    text-align: center;
+    font-size: 18px;
+}
+.ecommerce-project ul
+{
+    text-align: center;
+    list-style: none;
+    font-size: 18px;
+}
+.ecommerce-project h4 
+{
+    text-align:center;
+}
+body.dark-mode .ecommerce-project h4
+{
+    color: rgb(246, 88, 151) ;
+}
+.link
+{
+    color: rgb(21, 5, 237);
+    font-weight: bold;
+    text-decoration:underline ;
+}
+body.dark-mode .link
+{
+    color: white;
+}
+
+.Projects {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .ecommerce-project {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-header {
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .projects-header h2 {
+        font-size: 28px;
+    }
+    
+    .ecommerce-project {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        padding: 20px;
+        margin-top: 20px;
+    }
+    
+    .ecommerce-project h3 {
+        font-size: 20px;
+    }
+    
+    .ecommerce-project p,
+    .ecommerce-project ul {
+        font-size: 16px;
+    }
+    
+    .ecommerce-project h4 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-header h2 {
+        font-size: 24px;
+    }
+    
+    .ecommerce-project {
+        width: 100%;
+        padding: 15px;
+    }
+    
+    .ecommerce-project h3 {
+        font-size: 18px;
+    }
+    
+    .ecommerce-project p,
+    .ecommerce-project ul {
+        font-size: 14px;
+    }
+    
+    .ecommerce-project h4 {
+        font-size: 14px;
+    }
+    
+    .ecommerce-project ul {
+        padding-left: 0;
+    }
+}

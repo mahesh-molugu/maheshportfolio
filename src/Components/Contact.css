@@ -1,0 +1,389 @@
+.contact {
+    box-shadow: 0 0 8px rgba(0,0,0, 0.8);
+    width: 50%;
+    margin-left: 400px;
+    margin-top: 100px;
+    background-color: rgb(233, 227, 227);
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+}
+
+body.dark-mode .contact {
+    background-color: rgb(44, 42, 42);
+    box-shadow: 0 0 8px rgba(177, 171, 171, 0.8);
+}
+
+.contact-header {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-header h2 {
+    color: rgb(31, 23, 108);
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+body.dark-mode .contact-header h2 {
+    color: rgb(246, 88, 151);
+}
+
+.contact-header p {
+    color: #333;
+    font-size: 18px;
+}
+
+body.dark-mode .contact-header p {
+    color: #ccc;
+}
+
+.contact-container {
+    display: flex;
+    gap: 20px;
+    padding: 30px 50px;
+    align-items: flex-start;
+}
+
+.details {
+    flex: 1;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.details h3 {
+    color: rgb(31, 23, 108);
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+body.dark-mode .details h3 {
+    color: rgb(246, 88, 151);
+}
+
+.details p {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+body.dark-mode .details p {
+    color: #ccc;
+}
+
+.icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+  justify-content: center;
+    align-items: center;
+}
+
+.icons a {
+    transition: transform 0.3s ease;
+}
+
+.icons a:hover {
+    transform: scale(1.2);
+}
+
+.divider {
+    width: 2px;
+    background-color: #5b5050;
+    min-height: 400px;
+    flex-shrink: 0;
+}
+
+body.dark-mode .divider {
+    background-color: #888;
+}
+
+.send-message {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.send-message h3 {
+    color: rgb(31, 23, 108);
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: left;
+}
+
+body.dark-mode .send-message h3 {
+    color: rgb(246, 88, 151);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: inherit;
+    background-color: #fff;
+    color: #000;
+    transition: border-color 0.3s ease;
+}
+
+.form input:focus,
+.form textarea:focus {
+    outline: none;
+    border-color: rgb(52, 89, 230);
+}
+
+body.dark-mode .form input,
+body.dark-mode .form textarea {
+    background-color: #333;
+    color: #fff;
+    border-color: #555;
+}
+
+body.dark-mode .form input:focus,
+body.dark-mode .form textarea:focus {
+    border-color: rgb(246, 88, 151);
+}
+
+.form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form button {
+    padding: 12px 30px;
+    background-color: rgb(78, 76, 76);
+    color: white;
+    border: none;
+    border-radius: 100px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    align-self: center;
+    width: fit-content;
+    margin-top: 10px;
+}
+
+.form button:hover {
+    background-color: rgb(52, 89, 230);
+    transform: scale(1.05);
+}
+
+body.dark-mode .form button {
+    background-color: rgb(44, 42, 42);
+    color: white;
+}
+
+body.dark-mode .form button:hover {
+    background-color: rgb(246, 88, 151);
+}
+
+.status-text {
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+}
+
+.status-text.success {
+    color: green;
+    background-color: rgba(0, 255, 0, 0.1);
+}
+
+.status-text.sending {
+    color: #ffa500;
+    background-color: rgba(255, 165, 0, 0.1);
+}
+
+.status-text.error {
+    color: red;
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+body.dark-mode .status-text.success {
+    color: #4ade80;
+    background-color: rgba(74, 222, 128, 0.2);
+}
+
+body.dark-mode .status-text.sending {
+    color: #fbbf24;
+    background-color: rgba(251, 191, 36, 0.2);
+}
+
+body.dark-mode .status-text.error {
+    color: #f87171;
+    background-color: rgba(248, 113, 113, 0.2);
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .contact {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+    }
+    
+    .contact-container {
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px 40px;
+    }
+    
+    .divider {
+        display: none;
+    }
+    
+    .details,
+    .send-message {
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+    }
+    
+    .details {
+        text-align: center;
+    }
+    
+    .send-message h3 {
+        text-align: center;
+    }
+    
+    .icons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+    }
+    
+    .contact-header {
+        padding-top: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .contact-header h2 {
+        font-size: 24px;
+    }
+    
+    .contact-header p {
+        font-size: 16px;
+    }
+    
+    .contact-container {
+        padding: 20px 30px;
+    }
+    
+    .details h3,
+    .send-message h3 {
+        font-size: 20px;
+    }
+    
+    .details p {
+        font-size: 16px;
+    }
+    
+    .form {
+        max-width: 100%;
+    }
+    
+    .form input,
+    .form textarea {
+        font-size: 16px;
+        padding: 12px;
+    }
+    
+    .form button {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 100px;
+        border-radius: 0;
+    }
+    
+    .contact-header {
+        padding-top: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .contact-header h2 {
+        font-size: 20px;
+    }
+    
+    .contact-header p {
+        font-size: 14px;
+    }
+    
+    .contact-container {
+        padding: 15px 20px;
+    }
+    
+    .details h3,
+    .send-message h3 {
+        font-size: 18px;
+    }
+    
+    .details p {
+        font-size: 14px;
+    }
+    
+    .icons {
+        gap: 10px;
+        justify-content: center;
+    }
+    
+    .icons a svg {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .form input,
+    .form textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+    
+    .form button {
+        font-size: 14px;
+        padding: 10px 20px;
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    .status-text {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+}
+
