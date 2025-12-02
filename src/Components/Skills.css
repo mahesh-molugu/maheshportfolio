@@ -1,7 +1,8 @@
+
 .heading
 {
     box-shadow: 0 0 8px rgba(0,0,0, 1);
-    margin-top:10px;
+    margin-top:;
     margin-left: 500px;
     padding-left: 20px;
     padding-right: 20px;
@@ -139,8 +140,7 @@ body.dark-mode .soft-skills ul li button
 }
 
 .Skills {
-    padding-top: 100px;
-    padding-bottom: 50px;
+
 }
 
 /* Responsive Styles */

@@ -6,9 +6,9 @@ const Home = () => {
   return (
     <motion.div
      className="section-home"
-     initial={{ opacity:0, y:30}}
-     animate ={{ opacity:1, y:0 }}
-     tranisition={{duration:1}}
+  initial={{ opacity: 0, y: 0 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 2 }}
     >
         <h1>I'M <span className="highlight">Mahesh Molugu</span></h1>
         <p>Full Stack Developer | React and Java Enthusiast</p>

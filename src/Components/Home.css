@@ -39,7 +39,7 @@ body.dark-mode
 {
    
     background-color:rgb(78, 76, 76);
-;
+
     margin-top: 20px;
     border-radius: 100px;
     padding: 10px 60px;
@@ -57,10 +57,12 @@ body.dark-mode .highlight
 }
 .know-btn a{
     color: white;
+    text-decoration: none;
 }
 
 .projects-btn a{
     color: white;
+    text-decoration: none;
 }
 
 .section-home {
