@@ -72,16 +72,11 @@ body.dark-mode .about-container .summarise {
 
 
 @media (max-width: 768px) {
-    .About {
-        padding-top: 100px;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    
+   
     .education {
         max-width: none;
         margin-left: 0;
-        margin-top: 20px;
+    
         height: auto;
         padding-bottom: 20px;
     }
@@ -159,11 +154,7 @@ body.dark-mode .about-container .summarise {
 }
 
 @media (max-width: 480px) {
-    .About {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    
+
     .education,
     .summary,
     .training,

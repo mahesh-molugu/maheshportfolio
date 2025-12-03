@@ -1,68 +1,70 @@
-.projects-header
+.project-container
 {
-   justify-items: center;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+    margin-top: 100px;
+    gap: 10px;
+    padding-top:25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    box-shadow: 0 0 8px rgba(0,0,0, 0.8) ;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+
 }
-body.dark-mode .projects-header
+.project-container h2
 {
-    color: rgb(246, 88, 151) ;
-}
-.ecommerce-project
-{
-    box-shadow:  0 0 8px rgba(0,0,0, 0.8);
-    background-color: rgb(233, 227, 227) ;
-    width: 50%;
-    height: 400px;
-    align-content: center;
-    margin-left: 400px;
-}
-body.dark-mode .ecommerce-project
-{
-    background-color: rgb(44, 42, 42);
-    box-shadow:0 0 8px rgba(177, 171, 171, 0.8); ;
+    color: rgb(31, 23, 108);;
 }
 
-.ecommerce-project h3
+body.dark-mode .project-container h2
 {
-    text-align: center;
+    color: rgb(246, 88, 151);
 }
 body.dark-mode .ecommerce-project h3
 {
-    color: rgb(246, 88, 151) ;
-}
-
-.ecommerce-project p
-{
-    text-align: center;
-    font-size: 18px;
-}
-.ecommerce-project ul
-{
-    text-align: center;
-    list-style: none;
-    font-size: 18px;
-}
-.ecommerce-project h4 
-{
-    text-align:center;
+    color: rgb(246, 88, 151);
 }
 body.dark-mode .ecommerce-project h4
 {
-    color: rgb(246, 88, 151) ;
-}
-.link
-{
-    color: rgb(21, 5, 237);
-    font-weight: bold;
-    text-decoration:underline ;
-}
-body.dark-mode .link
-{
-    color: white;
+    color: rgb(246, 88, 151);
 }
 
-.Projects {
-    padding-top: 100px;
-    padding-bottom: 50px;
+.ecommerce-project
+{
+    font-size: 18px;
+    box-shadow: 0 0 8px rgba(0,0,0, 0.8)  ;
+    width: 50%;
+    align-self: center;
+    padding: 30px;
+}
+.ecommerce-project ul 
+{
+    list-style-type:none;
+}
+.ecommerce-project h3,h4
+{
+    color:rgb(31, 23, 108);
+}
+
+
+body.dark-mode .ecommerce-project a
+{
+   color: white; 
+}
+body.dark-mode .project-container
+{
+    box-shadow: 0 0 8px rgba(177, 171, 171, 0.8);
+}
+body.dark-mode .ecommerce-project
+{
+    box-shadow: 0 0 8px rgba(177, 171, 171, 0.8);
+}
+.ecommerce-project a
+{
+    text-decoration: none;
 }
 
 /* Responsive Styles */

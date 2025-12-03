@@ -1,154 +1,126 @@
-
-
-.Skills 
+.skills-container
 {
-    border: 2px solid;
     margin-top: 100px;
-    height: 100vh;
-   
-}
-.heading
-{
-    box-shadow: 0 0 8px rgba(0,0,0, 1);
-
-    margin-left: 500px;
-    padding-left: 20px;
-    padding-right: 20px;
-    background-color:rgb(222, 215, 215);
-    width: fit-content;
-}
-.tech-skills
-{
-  box-shadow: 0 0 8px rgba(0,0,0, 0.8) ;
-  width: 96.5%;
-  height: 150px;
-  margin-left: 25px;
-  justify-content: center;
-  justify-items: center;
-  margin-top:30px;
-  
-  padding-right: 50px;
-  background-color: rgb(222, 215, 215);
-  padding-top: 10px;
-  padding-left:50px
-
-}
-.tech-skills ul 
-{
-    margin-top: 25px;
-    list-style-type: none;
-    display:flex;
-    justify-content: space-between;
-    justify-items: center;
-    
-    gap: 30px;
-    
-}
-.tech-skills ul li button{
-    border-radius: 100px;
-    background-color:rgb(236, 234, 234);
-    color: black;
-    font-weight: 550;
-    box-shadow:0 0 8px rgba(0,0,0, 1.8) ;
-    
-}
-.soft-skills
-{
-    box-shadow:0 0 8px rgba(0,0,0, 0.8) ;
-
-    justify-items: center;
-    width: 96.5%;
-    padding-left:50px;
-    padding-right:50px;
-    padding-top: 10px;
-    margin-left: 25px;
-    margin-top: 20px;
-    background-color: rgb(222, 215, 215);;
-    height: 150px;
-}
-.soft-skills ul{
-    list-style-type: none;
+    margin-bottom: 50px;
     display: flex;
-    gap:20px;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    text-align: center;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-top: 20px;
     padding-bottom: 20px;
-
-
 }
-.soft-skills ul li button{
-margin-top: 30px;
-    border-radius:100px;
-    background-color: rgb(236, 234, 234);
-    color: black;
-    font-weight: 550;
-    width: fit-content;
-     box-shadow:0 0 8px rgba(0,0,0, 1.8) ;
-    
-}
-
-.contact-btn button
+body.dark-mode .skills-container h2
 {
-    margin-top: 50px;
-    width: fit-content;
-    padding-left: 20PX;
-    padding-right: 20px;
-    border-radius: 100px;
-    font-size:20px ;
-   
-    background-color:rgb(78, 76, 76) ;
-    
+  color: rgb(246, 88, 151);
 }
-
-
-.name
-{
- color: green;
-}
-
 body.dark-mode .heading
 {
-    background-color: rgb(44, 42, 42) ;
-    box-shadow: rgba(177, 171, 171, 0.8) 0 0 8px;
-}
-body.dark-mode .heading .name
-{
-    color: rgb(246, 88, 151);
+    background-color: rgb(44, 42, 42);
 }
 body.dark-mode .tech-skills
 {
-    background-color:rgb(44, 42, 42) ; 
-        box-shadow: rgba(177, 171, 171, 0.8) 0 0 8px;
-
-}
-body.dark-mode .tech-skills h2
-{
-    color: rgb(246, 88, 151);
+    background-color: rgb(44, 42, 42);
 }
 body.dark-mode .soft-skills
 {
-    background-color:rgb(44, 42, 42) ;
-        box-shadow: rgba(177, 171, 171, 0.8) 0 0 8px;
-    
+    background-color: rgb(44, 42, 42);
 }
-body.dark-mode .soft-skills h2
+body.dark-mode .skills-container button
 {
-    color:rgb(246, 88, 151) ;
+    border-color:rgb(246, 88, 151);
 }
-body.dark-mode .contact-btn button{
-    background-color: rgb(44, 42, 42) ;;
-    box-shadow: rgba(177, 171, 171, 0.8) 0 0 8px;
-}
-body.dark-mode .tech-skills ul li button
-    {
-        background-color: rgb(185, 178, 178);
-        box-shadow: rgba(177, 171, 171, 0.6) 0 0 8px;
-    }
-
-body.dark-mode .soft-skills ul li button
+body.dark-mode .contact-btn button:hover
 {
-    background-color: rgb(185, 178, 178);
-    box-shadow: rgba(177, 171, 171, 0.6) 0 0 8px;
+  background-color:rgb(246, 88, 151) ;
+  border-color: rgb(246, 88, 151);
+}
+.skills-container button
+{ 
+    font-size: 14px;
+    padding: 5px 20px;
+    width: fit-content;
+    border-radius: 100px;
+    background-color: rgb(231, 228, 224);
+}
+.skills-container ul
+{
+    list-style-type:none;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+.skills-container h2 
+{
+    align-self: center;
+     color: rgb(31, 23, 108);
+}
+.heading
+{
+    padding: 5px 30px;
+    width: fit-content;
+    align-self: center;
+    box-shadow:0 0 8px rgba(0,0,0, 0.8) ;
+    color: rgb(31, 23, 108);
+    background-color:rgb(233, 227, 227);
 }
 
+
+.tech-skills 
+{
+    display: flex;
+    flex-direction: column;
+     align-self: center;
+     gap: 40px;
+     box-shadow:0 0 8px rgba(0,0,0, 0.8) ;
+     padding: 30px 105px 50px 105px;
+      width: 100%;
+      background-color:rgb(233, 227, 227);
+}
+.t-skill
+{
+    display: flex;
+    gap: 50px;
+    align-self: center;
+}
+
+.soft-skills
+{
+    background-color:rgb(233, 227, 227);
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 40px;
+     box-shadow:0 0 8px rgba(0,0,0, 0.8) ;
+     padding: 30px 80px 50px 40px;
+     width: 100%;
+}
+.s-skill
+{
+ display: flex;
+    gap: 50px;
+    align-self: center;
+   
+}
+.contact-btn button
+{
+    padding: 10px 60px; 
+     background-color: rgb(61, 60, 60);
+}
+.contact-btn button a
+   {
+    color:white;
+    text-decoration: none;
+   } 
+.contact-btn button:hover
+{
+ background-color: rgb(52, 89, 230);
+    border-color:rgb(52, 89, 230) ;
+    font-weight: bolder;
+   
+}
 
 /* Responsive Styles */
 @media (max-width: 1024px) {

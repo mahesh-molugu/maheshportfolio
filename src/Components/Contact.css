@@ -168,7 +168,7 @@ body.dark-mode .form textarea:focus {
     padding: 12px 30px;
     background-color: rgb(78, 76, 76);
     color: white;
-    border: none;
+    border-color: white;
     border-radius: 100px;
     font-size: 18px;
     font-weight: 600;
@@ -325,8 +325,8 @@ body.dark-mode .status-text.error {
 @media (max-width: 480px) {
     .contact {
         width: 100%;
-        margin-left: 0;
-        margin-right: 0;
+        margin-left: 0px;
+        margin-right: 0px;
         margin-top: 100px;
         border-radius: 0;
     }
